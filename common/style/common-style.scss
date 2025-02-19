@@ -1,0 +1,20 @@
+view,swiper,swiper-item{
+	box-sizing: border-box;
+}
+
+.pageBg{
+	background: 
+	// transparent 透明色 从400rpx开始往下变白色
+	linear-gradient(to bottom,transparent,#fff 400rpx),
+	linear-gradient(to right,#55ffff 20%,#aaffff);
+	min-height: 80vh;
+}
+
+.loadingLayout{
+	padding:30rpx 0;
+}
+
+.safe-area-inset-bottom{
+	height: env(safe-area-inset-bottom);
+}
+
