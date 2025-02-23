@@ -1,23 +1,32 @@
 <template>
 	<view class="noticeLayout">
 		<view class="title">
-			<view class="tag" v-if="detail.select">
+			<view class="tag">
+		<!--<view class="tag" v-if="detail.select"> -->
 				<uni-tag inverted text="置顶" type="error" />
 			</view>
-			<view class="font">{{detail.title}}</view>			
+			<view class="font">椰子柠檬壁纸 , 版权公告</view>			
 		</view>
 		
 		<view class="info">
-			<view class="item">{{detail.author}}</view>					
+			<view class="item">椰子柠檬</view>					
 			<view class="item">
-				<uni-dateformat :date="detail.publish_date" format="yyyy-MM-dd hh:mm:ss"></uni-dateformat>
+				<uni-dateformat date="2025-2-18 15:23:45"></uni-dateformat>
+				<!-- <uni-dateformat :date="detail.publish_date" format="yyyy-MM-dd hh:mm:ss"></uni-dateformat> -->
 			</view>	
 		</view>
 		
 		
 		<view class="content">		
-			<mp-html :content="detail.content" />
+			<!-- <mp-html :content="detail.content" /> -->
+			<view class="fontzi">
+				欢迎点击图片 , 识别小程序码使用 "椰子柠檬壁纸" , 测试用户体验及bug反馈。
+			</view>
+			<image src="../../static/images/b6qic2vc.png" mode="aspectFill" style="height: 500rpx;width: 500rpx;"></image>
 			<!-- <rich-text :nodes="detail.content"></rich-text> -->
+			<view class="fongzi">
+				"椰子柠檬壁纸" 项目, 所有图片均采集与互联网,在壁纸信息中 , 均设置了图片来源。图片来源如有侵权 ，请联系客服或作者QQ：2411337403 ， 提供侵权证据 ，对图片进行删除
+			</view>
 		</view>
 		
 		<view class="count">

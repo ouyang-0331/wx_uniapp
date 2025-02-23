@@ -29,20 +29,20 @@
   color: #000;
 }
 .layout .navbar .titleBar .search.data-v-412fc155 {
-  width: 220rpx;
+  width: 300rpx;
   height: 50rpx;
   border-radius: 60rpx;
   background: rgba(255, 255, 255, 0.4);
   border: 1px solid #fff;
   margin-left: 30rpx;
   color: #999;
-  font-size: 28rpx;
+  font-size: 32rpx;
   display: flex;
   align-items: center;
 }
 .layout .navbar .titleBar .search .icon.data-v-412fc155 {
-  margin-left: 5rpx;
+  margin-left: 30rpx;
 }
 .layout .navbar .titleBar .search .text.data-v-412fc155 {
-  padding-left: 10rpx;
+  padding-left: 50rpx;
 }

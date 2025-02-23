@@ -1,6 +1,5 @@
 "use strict";
 const common_vendor = require("../../common/vendor.js");
-const common_assets = require("../../common/assets.js");
 const utils_system = require("../../utils/system.js");
 const api_apis = require("../../api/apis.js");
 if (!Array) {
@@ -28,54 +27,53 @@ const _sfc_main = {
         a: userinfo.value
       }, userinfo.value ? {
         b: common_vendor.unref(utils_system.getNavBarHeight)() + "px",
-        c: common_assets._imports_0$1,
-        d: common_vendor.t(userinfo.value.address.city || userinfo.value.address.province || userinfo.value.address.country),
-        e: common_vendor.p({
+        c: common_vendor.t(userinfo.value.address.city || userinfo.value.address.province || userinfo.value.address.country),
+        d: common_vendor.p({
           type: "download-filled",
           size: "20"
         }),
-        f: common_vendor.t(userinfo.value.downloadSize),
-        g: common_vendor.p({
+        e: common_vendor.t(userinfo.value.downloadSize),
+        f: common_vendor.p({
           type: "right",
           size: "15",
           color: "#aaa"
         }),
-        h: common_vendor.p({
+        g: common_vendor.p({
           type: "star-filled",
           size: "20"
         }),
-        i: common_vendor.t(userinfo.value.scoreSize),
+        h: common_vendor.t(userinfo.value.scoreSize),
+        i: common_vendor.p({
+          type: "right",
+          size: "15",
+          color: "#aaa"
+        }),
         j: common_vendor.p({
           type: "right",
           size: "15",
           color: "#aaa"
         }),
         k: common_vendor.p({
-          type: "right",
-          size: "15",
-          color: "#aaa"
-        }),
-        l: common_vendor.p({
           type: "notification-filled",
           size: "20"
         }),
-        m: common_vendor.p({
+        l: common_vendor.p({
           type: "right",
           size: "15",
           color: "#aaa"
         }),
-        n: common_vendor.p({
+        m: common_vendor.p({
           type: "help-filled",
           size: "20"
         }),
-        o: common_vendor.p({
+        n: common_vendor.p({
           type: "right",
           size: "15",
           color: "#aaa"
         })
       } : {
-        p: common_vendor.unref(utils_system.getNavBarHeight)() + "px",
-        q: common_vendor.p({
+        o: common_vendor.unref(utils_system.getNavBarHeight)() + "px",
+        p: common_vendor.p({
           status: "loading"
         })
       });

@@ -1,6 +1,5 @@
 "use strict";
 const common_vendor = require("../../common/vendor.js");
-const common_assets = require("../../common/assets.js");
 const api_apis = require("../../api/apis.js");
 if (!Array) {
   const _easycom_custom_nav_bar2 = common_vendor.resolveComponent("custom-nav-bar");
@@ -69,43 +68,51 @@ const _sfc_main = {
         a: common_vendor.p({
           title: "推荐"
         }),
-        b: common_assets._imports_0,
-        c: common_assets._imports_1,
-        d: common_assets._imports_2,
-        e: common_assets._imports_0$1,
-        f: common_assets._imports_4,
-        g: common_vendor.p({
+        b: common_vendor.f(bannerList.value, (item, k0, i0) => {
+          return common_vendor.e({
+            a: item.target == "miniProgram"
+          }, item.target == "miniProgram" ? {
+            b: item.picurl,
+            c: item.url,
+            d: item.appid
+          } : {
+            e: item.picurl,
+            f: `/pages/classlist/classlist?${item.url}`
+          }, {
+            g: item._id
+          });
+        }),
+        c: common_vendor.p({
           type: "sound-filled",
           size: "20"
         }),
-        h: common_vendor.f(noticeList.value, (item, k0, i0) => {
+        d: common_vendor.f(noticeList.value, (item, k0, i0) => {
           return {
-            a: common_vendor.t(item.title),
-            b: "/pages/notice/detail?id=" + item._id,
-            c: item._id
+            a: "/pages/notice/detail?id=" + item._id,
+            b: item._id
           };
         }),
-        i: common_vendor.p({
+        e: common_vendor.p({
           type: "right",
           size: "16",
           color: "#333"
         }),
-        j: common_vendor.p({
+        f: common_vendor.p({
           type: "calendar",
           size: "18"
         }),
-        k: common_vendor.p({
+        g: common_vendor.p({
           date: Date.now(),
           format: "dd日"
         }),
-        l: common_vendor.f(randomList.value, (item, k0, i0) => {
+        h: common_vendor.f(randomList.value, (item, k0, i0) => {
           return {
             a: item.smallPicurl,
             b: item._id,
             c: common_vendor.o(($event) => goPreview(item._id), item._id)
           };
         }),
-        m: common_vendor.f(classifyList.value, (item, k0, i0) => {
+        i: common_vendor.f(classifyList.value, (item, k0, i0) => {
           return {
             a: item._id,
             b: "1cf27b2a-7-" + i0,
@@ -114,7 +121,7 @@ const _sfc_main = {
             })
           };
         }),
-        n: common_vendor.p({
+        j: common_vendor.p({
           isMore: true
         })
       };

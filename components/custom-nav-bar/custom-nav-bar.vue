@@ -7,11 +7,10 @@
 				<view class="title">{{title}}</view>
 				<navigator url="/pages/search/search" class="search">
 					 <uni-icons class="icon" type="search" color="#888" size="18"></uni-icons>
-					 <text class="text">搜索</text>
+					 <text class="text">搜 索</text>
 				</navigator>
 			</view>
 		</view>
-		
 		<view class="fill" :style="{height:getNavBarHeight()+'px'}">
 			
 		</view>
@@ -28,7 +27,6 @@ defineProps({
 		default:"壁纸"
 	}
 })
-
 
 </script>
 
@@ -55,21 +53,21 @@ defineProps({
 				color: $text-font-color-1;
 			}
 			.search{
-				  width: 220rpx;
+				  width: 300rpx;
 				  height: 50rpx;
 				  border-radius: 60rpx;
 				  background: rgba(255,255,255,0.4);
 				  border:1px solid #fff;
 				  margin-left:30rpx;
 				  color:#999;
-				  font-size: 28rpx;
+				  font-size: 32rpx;
 				  display: flex;
 				  align-items: center;
 				  .icon{
-					  margin-left:5rpx;
+					  margin-left:30rpx;
 				  }
 				  .text{
-					  padding-left:10rpx;
+					  padding-left:50rpx;
 				  }
 			}
 		}

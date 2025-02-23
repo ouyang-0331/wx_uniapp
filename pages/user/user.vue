@@ -4,7 +4,7 @@
 		<view :style="{height:getNavBarHeight()+'px'}"></view>
 		<view class="userInfo">
 			<view class="avatar">
-				<image src="../../common/images/5f2d4795db95fe9fd00a79ed5cde427.jpg" mode="aspectFill"></image>
+				<image src="../../static/images/5f2d4795db95fe9fd00a79ed5cde427.jpg" mode="aspectFill"></image>
 			</view>
 			<view class="ip">椰子柠檬</view>
 			<view class="address">来自于：

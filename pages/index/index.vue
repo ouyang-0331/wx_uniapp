@@ -10,22 +10,23 @@
 		<view class="banner">
 			<swiper circular indicator-dots indicator-color="rgba(255,255,255,.5)" 
 			indicator-active-color="#ffffff" autoplay>
-			<swiper-item>
-				<image src="../../common/images/09327249115ac72674d8fdced604326.jpg" mode="aspectFill" style="width: 690rpx;"></image>
+			<!-- <swiper-item>
+				<image src="../../static/images/09327249115ac72674d8fdced604326.jpg" mode="aspectFill" style="width: 690rpx;"></image>
 			</swiper-item>
 			<swiper-item>
-				<image src="../../common/images/0f0e5e8222cf8138718961569685210.jpg" mode="aspectFill" style="width: 690rpx;"></image>
+				<image src="../../static/images/0f0e5e8222cf8138718961569685210.jpg" mode="aspectFill" style="width: 690rpx;"></image>
 			</swiper-item>
 			<swiper-item>
-				<image src="../../common/images/1b8d1d8d38f11365d04ff6fd7674dc9.jpg" mode="aspectFill" style="width: 690rpx;"></image>
+				<image src="../../static/images/1b8d1d8d38f11365d04ff6fd7674dc9.jpg" mode="aspectFill" style="width: 690rpx;"></image>
 			</swiper-item>
 			<swiper-item>
-				<image src="../../common/images/5f2d4795db95fe9fd00a79ed5cde427.jpg" mode="aspectFill" style="width: 690rpx;"></image>
+				<image src="../../static/images/5f2d4795db95fe9fd00a79ed5cde427.jpg" mode="aspectFill" style="width: 690rpx;"></image>
 			</swiper-item>
 			<swiper-item>
-				<image src="../../common/images/25e987f58730890b74757c4101b7002.jpg" mode="aspectFill" style="width: 690rpx;"></image>
-			</swiper-item>
-<!-- 				<swiper-item v-for="item in bannerList" :key="item._id">
+				<image src="../../static/images/f8cb4afa278f7817753e2a2377c88e4.png" mode="aspectFill" style="width: 690rpx;"></image>
+			</swiper-item> -->
+			
+				<swiper-item v-for="item in bannerList" :key="item._id">
 					
 					<navigator v-if="item.target == 'miniProgram'" 
 					:url="item.url" 
@@ -39,7 +40,7 @@
 					<navigator v-else :url="`/pages/classlist/classlist?${item.url}`" class="like">
 						<image :src="item.picurl" mode="aspectFill"></image>
 					</navigator>
-				</swiper-item>		 -->		
+				</swiper-item>				
 			</swiper>
 		</view>
 		
@@ -52,7 +53,7 @@
 				<swiper vertical autoplay interval="1500" duration="300" circular>
 					<swiper-item v-for="item in noticeList" :key="item._id">
 						<navigator :url="'/pages/notice/detail?id='+item._id">
-							{{item.title}}
+							椰子柠檬壁纸 ， 版权公告
 						</navigator>
 					</swiper-item>
 				</swiper>
